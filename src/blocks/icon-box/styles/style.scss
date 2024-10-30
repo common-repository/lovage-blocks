@@ -1,0 +1,93 @@
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+
+.eb-icon-box{
+  margin: 0 auto;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1s; /* Firefox < 16 */
+        -ms-animation: fadein 1s; /* Internet Explorer */
+         -o-animation: fadein 1s; /* Opera < 12.1 */
+            animation: fadein 1s;
+  
+  .eb-icon-box-image{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-bottom: 20px;
+     
+
+     &.round i{
+       border-radius: 200%;
+     }
+
+     i{
+       padding: 20px;
+       border: 1px solid #eee;
+     }
+  }
+
+  &.left{
+      .eb-icon-box-image{
+         float: left;
+         margin-right: 15px;
+      }
+      .eb-icon-box-content{
+         float: left
+      }
+  }
+
+  &.right{
+      .eb-icon-box-image{
+         float: right;
+         margin-left: 15px;
+      }
+      .eb-icon-box-content{
+         float: right
+      }
+  }
+
+  &.center{
+      .eb-icon-box-image{
+         float: none;
+         margin: 0 auto 15px;
+      }
+      .eb-icon-box-content{
+         max-width: 100%;
+      }
+      .eb-icon-box-content,
+      .eb-icon-box-title{
+         float: none;
+         text-align:center;
+         margin-top: 0;
+         margin-bottom: 10px;
+      }
+
+  }
+
+  &-button{
+	   padding: 0;
+  }
+
+  &-title{
+     display: block;
+     margin-top: 0 !important;
+     margin-bottom: 10px !important;
+  }
+
+  &-content{
+     max-width: 80%;
+     overflow: hidden;
+
+     p{
+        margin: 0;
+     }
+  }
+}

@@ -1,0 +1,48 @@
+.eb-icon-picker-control{
+
+    .components-base-control{
+       
+        .components-base-control__field{
+            display: flex;
+            flex-wrap: wrap;
+            columns: 4;
+            height:200px;
+            overflow: auto;
+            overflow-x: hidden;
+            border: 1px solid #eee;
+            padding: 10px;
+        }
+        
+        .components-radio-control__option{
+            margin-bottom: 0;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+
+            .components-radio-control__input[type=radio]{
+                display: none;
+            }
+
+            label{
+                cursor: pointer;
+                width: 100%;
+                height: 100%;
+                display: block;
+
+                &:hover{
+                 border: 1px solid $blue;
+                }
+            }
+
+            .components-radio-control__input[type=radio]:checked + label {
+              border: 1px solid $blue;
+              box-shadow: 0 0 3px 3px #eee;
+
+              svg{
+                color: $blue;
+              }
+            }
+        }
+    }
+}

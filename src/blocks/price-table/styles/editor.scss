@@ -1,0 +1,34 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+.eb-pricetable{
+    min-width: 33%;
+}
+.eb-block-button {
+    &+ .blocks-button__inline-link .editor-url-input {
+        display: inline-block;
+        width: auto;
+
+        input[type="text"]{
+           width: 120px !important;
+        }
+    }
+
+    &+ .blocks-button__inline-link .components-button {
+        display: inline-block;
+    }
+
+    &+ .blocks-button__inline-link svg {
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+
+    .eb-button .editor-rich-text{
+        cursor: auto;
+    }
+}
+

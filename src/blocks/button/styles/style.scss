@@ -1,0 +1,55 @@
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+
+.eb-button{
+   display: inline-block;
+   margin-right: 5px;
+   background: #000;
+   color: #fff;
+   padding: 5px 15px;
+   min-width: 50px;
+   font-size: 16px;
+   text-align: center;
+   text-decoration: none !important;
+   cursor: pointer;
+   transition: all 0.2s;
+   -webkit-transition: all 0.2s;
+
+   &:hover{
+      transform: scale(0.9);
+      transition: all 0.2s;
+      -webkit-transition: all 0.2s;
+   }
+}
+
+.eb-block-button{
+  
+    max-width: 100% !important;
+
+   &.round{
+      .eb-button{
+         border-radius: 50px;
+      }
+   }
+
+   &.rounded{
+      .eb-button{
+         border-radius: 5px;
+      }
+   }
+
+   &.left{
+      text-align: left;
+   }
+
+   &.center{
+      text-align: center;
+   }
+
+   &.right{
+      text-align: right;
+   }
+}

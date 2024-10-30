@@ -1,0 +1,28 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+.eb-blockquote-button{
+  float: left;
+}
+
+.eb-blockquote-avatar{
+  
+   border: 1px solid #ddd;
+   background: #fff;
+   display: flex;
+   align-items: center;
+   justify-content: center; 
+
+   &.round{
+           border-radius: 200%;
+   }
+
+   svg{
+     width: 20px;
+     height: 20px;
+   }
+}

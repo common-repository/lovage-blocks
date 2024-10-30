@@ -1,0 +1,15 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+ .eb-toggle-title{
+    .editor-rich-text{
+        position: absolute;
+	    top: 10px;
+	    left: 40px;
+	    line-height: 1;
+    }
+ }

@@ -1,0 +1,27 @@
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+
+.eb-notice{
+   width: 100%;
+   min-height: 20px;
+   display: flex;
+   align-items: center;
+   padding: 10px;
+   font-size: 14px;
+   border: 1px solid rgba(110,199,138,1);
+   border-width: 1px 1px 1px 3px;
+   margin: 20px 0;
+
+   p{
+     word-break: break-all;
+     margin-bottom: 0;
+     margin-top: 0;
+   }
+
+   &-content{
+      margin-bottom: 0 !important;
+   }
+}

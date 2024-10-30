@@ -1,0 +1,60 @@
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+
+.eb-toggle{
+   width: 100%;
+   overflow: hidden;
+   height: auto;
+   margin:10px auto !important;
+
+   .eb-toggle-title{
+       border: 1px solid #ddd;
+       padding: 10px 10px 10px 15px;
+       outline: none;
+       cursor: pointer;
+       position: relative;
+       line-height: 1;
+       height: auto;
+       overflow: hidden;
+
+       &::-webkit-details-marker {
+          font-size:80%;
+       }
+   }
+
+   .eb-toggle-content{
+       border: 1px solid #ddd;
+       padding: 15px;
+       margin-top: -1px;
+
+       *{
+         animation: fadeInLeft .5s ease-in-out;
+       }
+   }
+
+
+   &.round{
+      .eb-toggle-title{
+        border-radius: 50px;
+      }
+
+      .eb-toggle-content{
+        border: none;
+      }
+   }
+
+   &.rounded{
+      .eb-toggle-title{
+        border-radius: 5px 5px 0 0;
+      }
+
+      .eb-toggle-content{
+        border-radius: 0 0 5px 5px;
+      }
+   }
+
+}
+
